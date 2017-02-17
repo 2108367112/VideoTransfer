@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<include 
+	    layout="@layout/head"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    />
+	
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="5dp"
+	    android:background="#f8f8f8"
+	    />
+	
+	<SurfaceView 
+	    android:id="@+id/surfaceview"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:visibility="gone"
+	    />
+	
+	<ImageView 
+	    android:id="@+id/imageView"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:visibility="visible"
+	    android:background="@drawable/pic1"
+	    />
+	
+	<fragment
+	    android:id="@+id/fra_list" 
+	    class="com.example.videotransfer.fragment.DeviceListFragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    />
+	
+	<fragment 
+	    android:id="@+id/fra_detail"
+	    class="com.example.videotransfer.fragment.DeviceDetailFragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    />
+	
+
+	
+	
+</LinearLayout>
